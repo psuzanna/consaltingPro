@@ -1,0 +1,62 @@
+html,
+body {
+	height: 100%;
+	@extend %font-main;
+}
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	max-width: 1440px;
+	margin: auto;
+}
+.header {
+	@media screen and (max-width:768px) {
+		padding: 0 20px;
+	}
+}
+.sidebar {
+	flex: 1 1 450px;
+	background: $white;
+	padding: 30px 60px;
+	height: 100%;
+	@media screen and (max-width:1023px) {
+		padding: 30px 10px;
+		//flex: 1 1
+	  }
+	@media screen and (max-width:768px) {
+		display: none;
+	 }
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	//width: calc(100% - 450px);
+
+}
+.main {
+	display: flex;
+	flex: 1;
+	background: $light-grey;
+	@media screen and (max-width:1439px) {
+		flex-direction: column;
+
+	}
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  @media screen and (max-width:1439px) {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+

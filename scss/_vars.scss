@@ -1,0 +1,58 @@
+$dark : #101628;
+$dark2 : #383B44;
+$light-grey: #F8F8FB;
+$light-grey2: #AFAFB0;
+$dark-grey: #8B8B8F;
+$green: #46A44E;
+$dark-green: #2A9133;
+$light-green: #86C58B;
+$white: #FFFFFF;
+
+%font-main {
+  font-family: 'Manrope', sans-serif;
+  color: $dark;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+%title {
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+  color: $dark;
+}
+
+%btn {
+  border: 2px transparent solid;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 18px 42px;
+  font-weight: 600;
+  font-size: 15px;
+  color: $white;
+}
+%btn-primary {
+  @extend %btn;
+  background: $dark;
+  &:hover {
+    background: $dark2;
+  }
+  &:active {
+    border:2px $light-green solid;
+  }
+}
+
+%btn-secondary {
+  @extend %btn;
+  background: $green;
+  &:hover {
+    background: $dark-green;
+  }
+}
+
+%btn-transparent {
+  @extend %btn;
+  background: transparent;
+  border: 1px $white solid;
+}
